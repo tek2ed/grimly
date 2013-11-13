@@ -1,0 +1,5 @@
+envoyer : git add fichier.c
+	  git commit -m "message"
+	  git push
+
+recevoir : git pull
