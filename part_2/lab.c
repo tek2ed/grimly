@@ -5,7 +5,7 @@
 ** Login   <amoure_a@epitech.net>
 ** 
 ** Started on  Thu Nov 14 11:17:39 2013 Alix Amoureux
-** Last update Thu Nov 14 15:07:10 2013 Alix Amoureux
+** Last update Thu Nov 14 15:41:41 2013 Alix Amoureux
 */
 
 #include	"part_2.h"
@@ -28,7 +28,7 @@ char		**create_tab(t_coord *coord)
       j = 0;
       while (j < coord->width)
 	{
-	  tab[i][j] = '*';
+	  tab[i][j] = coord->wall;
 	  j++;
 	}
       i++;
