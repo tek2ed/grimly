@@ -5,13 +5,14 @@
 ** Login   <amoure_a@epitech.net>
 ** 
 ** Started on  Thu Nov 14 10:25:18 2013 Alix Amoureux
-** Last update Thu Nov 14 11:25:25 2013 Alix Amoureux
+** Last update Thu Nov 14 16:01:24 2013 Alix Amoureux
 */
 
 #ifndef		_PART_2_H_
 # define	_PART_2_H_
 
 #include	<stdlib.h>
+#include	<stdio.h>
 
 typedef struct	s_coord
 {
