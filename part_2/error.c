@@ -5,7 +5,7 @@
 ** Login   <amoure_a@epitech.net>
 ** 
 ** Started on  Thu Nov 14 10:44:44 2013 Alix Amoureux
-** Last update Thu Nov 14 11:36:03 2013 Alix Amoureux
+** Last update Thu Nov 14 14:38:13 2013 Alix Amoureux
 */
 
 #include	"part_2.h"
@@ -26,6 +26,7 @@ void		error_message(char *str)
 int		check_size(char *str, char *name)
 {
   int		i;
+  int		nb;
 
   i = 0;
   while (str[i] != '\0')
@@ -38,5 +39,11 @@ int		check_size(char *str, char *name)
 	}
       i++;
     }
-  return (my_getnbr(str));
+  nb = my_getnbr(str);
+  if (nb < 5 || nb > 4096)
+    {
+      my_putstr("The ");
+      my_putstr(name);
+      error_message(" must be between 5 and 4096\n");
+    }
 }
