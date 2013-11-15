@@ -5,7 +5,7 @@
 ** Login   <amoure_a@epitech.net>
 ** 
 ** Started on  Thu Nov 14 10:21:34 2013 Alix Amoureux
-** Last update Thu Nov 14 13:51:13 2013 Alix Amoureux
+** Last update Fri Nov 15 13:18:58 2013 Alix Amoureux
 */
 
 #include	"part_2.h"
@@ -82,6 +82,7 @@ int		main(int ac, char **av)
   int		b;
 
   init_coord(&coord);
+  check_error(av, ac);
   var.i = 1;
   while (ac > 1)
     {
